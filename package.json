@@ -1,0 +1,35 @@
+{
+  "name": "appspice.js",
+  "version": "0.0.1",
+  "description": "JavaScript & Node client for AppSpice",
+  "main": "src/index.js",
+  "author": "Naughty Spirit <hi@naughtyspirit.co> (http://naughtyspirit.co/)",
+  "license": "MIT",
+  "keywords": [
+    "analytics",
+    "split testing",
+    "a/b testing",
+    "mobile",
+    "node",
+    "client",
+    "appspice"
+  ]
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:naughtyspirit/appspice.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naughtyspirit/appspice.js/issues"
+  },
+  "homepage": "http://appspice.it",
+  "scripts": {
+    "start": "node --harmony .",
+    "test": "node_modules/mocha/bin/mocha --harmony -w"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "dependencies": {
+    "request-promise": "^0.4.0"
+  }
+}
