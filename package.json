@@ -1,5 +1,5 @@
 {
-  "name": "appspice.js",
+  "name": "appspice",
   "version": "0.0.1",
   "description": "JavaScript & Node client for AppSpice",
   "main": "src/index.js",
