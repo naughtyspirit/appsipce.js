@@ -13,7 +13,7 @@
     "node",
     "client",
     "appspice"
-  ]
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:naughtyspirit/appspice.js.git"
