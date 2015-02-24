@@ -9,12 +9,11 @@ var AppSpice = function(apiKey) {
     return this
 }
 
-AppSpice.prototype.track = function* (namespace, name, source, data) {
+AppSpice.prototype.track = function* (namespace, name, data) {
     var data = data || {}
     var eventData = {
         namespace: namespace,
         name: name,
-        source: source,
         data: data
     }
     var options = {
