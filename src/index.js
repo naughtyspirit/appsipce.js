@@ -18,7 +18,7 @@ AppSpice.prototype.track = function* (namespace, name, source, data) {
         data: data
     }
     var options = {
-        uri: this.config.appSpiceEndpoint + "/events?appSpiceKey=" + this.config.apiKey,
+        uri: this.config.appSpiceEndpoint + "/events?accessToken=" + this.config.apiKey,
         method: "POST",
         json: true,
         body: eventData
