@@ -9,20 +9,19 @@ var AppSpice = function(apiKey) {
     return this
 }
 
-AppSpice.prototype.track = function* (namespace, name, data) {
-    var data = data || {}
-    var eventData = {
-        namespace: namespace,
-        name: name,
-        data: data
-    }
+AppSpice.prototype.track = function (namespace, name, data) {
+    var eventData = data || {}
     var options = {
         uri: this.config.appSpiceEndpoint + "/events?accessToken=" + this.config.apiKey,
         method: "POST",
         json: true,
-        body: eventData
+        body: {
+            namespace: namespace,
+            name: name,
+            data: eventData
+        }
     }
-    return yield Request(options)
+    return Request(options)
 }
 
 module.exports = AppSpice
