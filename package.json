@@ -1,6 +1,6 @@
 {
   "name": "appspice",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JavaScript & Node client for AppSpice",
   "main": "src/index.js",
   "author": "Naughty Spirit <hi@naughtyspirit.co> (http://naughtyspirit.co/)",
